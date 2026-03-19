@@ -9,11 +9,13 @@ Download my resume in your preferred format:
 
 ### 📄 PDF Version
 Full resume with detailed formatting.
-- [View/Download PDF](/assets/files/jeevanantham_p_resume_2026.pdf)
+- <a href="/assets/files/jeevanantham_p_resume_2026.pdf" target="_blank">View PDF</a>
+- <a href="/assets/files/jeevanantham_p_resume_2026.pdf" download>Download PDF</a>
 
-### 🌐 HTML Version  
+### 🌐 HTML Version
 Web-friendly condensed version.
-- [View/Download HTML](/assets/files/jeevanantham_p_resume_2026_condensed.html)
+- <a href="/assets/files/jeevanantham_p_resume_2026_condensed.html" target="_blank">View HTML</a>
+- <a href="/assets/files/jeevanantham_p_resume_2026_condensed.html" download>Download HTML</a>
 
 ---
 
