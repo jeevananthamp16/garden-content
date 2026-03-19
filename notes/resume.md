@@ -1,21 +1,16 @@
 ---
 title: Resume & Documents
 description: My resume and professional documents
+attachments:
+  - file: /assets/files/jeevanantham_p_resume_2026.pdf
+  - file: /assets/files/jeevanantham_p_resume_2026_condensed.html
 ---
 
 ## My Resume
 
-Download my resume in your preferred format:
+My resume is available in multiple formats below. Use the **View** button to open in browser, or **Download** to save locally.
 
-### 📄 PDF Version
-Full resume with detailed formatting.
-- <a href="/assets/files/jeevanantham_p_resume_2026.pdf" target="_blank">View PDF</a>
-- <a href="/assets/files/jeevanantham_p_resume_2026.pdf" download>Download PDF</a>
-
-### 🌐 HTML Version
-Web-friendly condensed version.
-- <a href="/assets/files/jeevanantham_p_resume_2026_condensed.html" target="_blank">View HTML</a>
-- <a href="/assets/files/jeevanantham_p_resume_2026_condensed.html" download>Download HTML</a>
+The attachments section below will automatically show view/download options for each file.
 
 ---
 
