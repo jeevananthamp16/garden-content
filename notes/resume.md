@@ -1,9 +1,8 @@
 ---
-title: Resume & Documents
-description: My resume and professional documents
-attachments:
-  - file: /assets/files/jeevanantham_p_resume_2026.pdf
-  - file: /assets/files/jeevanantham_p_resume_2026_condensed.html
+title: "Resume & Documents"
+visibility: "public"
+date: "2026-03-28"
+tags: []
 ---
 
 ## My Resume
@@ -12,6 +11,7 @@ My resume is available in multiple formats below. Use the **View** button to ope
 
 The attachments section below will automatically show view/download options for each file.
 
----
+
 
 **Last Updated:** March 2026
+
