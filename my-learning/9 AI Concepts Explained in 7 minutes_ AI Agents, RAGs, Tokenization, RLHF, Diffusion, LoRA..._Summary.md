@@ -1,3 +1,8 @@
+---
+title: "9 AI Concepts Explained in 7 minutes"
+description: "AI Agents, RAGs, Tokenization, RLHF, Diffusion, LoRA overview"
+---
+
 # 9 AI Concepts Explained in 7 minutes: AI Agents, RAGs, Tokenization, RLHF, Diffusion, LoRA...
 
 ## Overview
