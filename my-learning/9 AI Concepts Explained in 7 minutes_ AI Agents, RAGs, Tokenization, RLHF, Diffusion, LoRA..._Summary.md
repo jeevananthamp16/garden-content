@@ -1,11 +1,11 @@
 ---
-title: "9 AI Concepts Explained in 7 minutes"
+title: "9 AI Concepts Explained"
 visibility: "public"
 date: "2026-03-28"
 tags: []
 ---
 
-# 9 AI Concepts Explained in 7 minutes: AI Agents, RAGs, Tokenization, RLHF, Diffusion, LoRA...
+# 9 AI Concepts Explained : AI Agents, RAGs, Tokenization, RLHF, Diffusion, LoRA...
 
 ## Overview
 This segment introduces nine essential AI concepts, including tokenization, prompt engineering, and RLHF, which align models with human preferences. It also covers AI agents that extend LLM capabilities, RAGs for improved accuracy, and diffusion models that generate data by reversing noise processes, highlighting the advancements in modern AI technologies.
@@ -14,102 +14,76 @@ This segment introduces nine essential AI concepts, including tokenization, prom
 
 ## Timeline
 
-## 00:00:00 - 00:00:52
+## Introduction to AI Concepts
 
-Introduction to AI Concepts
+- This will explain nine core AI concepts that are repeatedly seen in real-world AI systems.
 
+-  Tokenization is the process where a tokenizer breaks text into smaller units called tokens and maps each token to an integer ID for neural networks like LLMs.
 
-- 00:00:00  The video will explain nine core AI concepts that are repeatedly seen in real-world AI systems.
+-  The most common tokenization algorithm is Byte Pair Encoding (BPE), which merges frequent adjacent pairs to form new tokens.
 
-- 00:00:12  Tokenization is the process where a tokenizer breaks text into smaller units called tokens and maps each token to an integer ID for neural networks like LLMs.
+## Text Decoding
 
-- 00:00:28  The most common tokenization algorithm is Byte Pair Encoding (BPE), which merges frequent adjacent pairs to form new tokens.
+-  A decoding algorithm selects a token from a probability distribution, appends it to the sequence, and repeats the process to create a full response.
 
-## 00:00:52 - 00:01:36
+-  Greedy decoding, the simplest approach, always chooses the most likely next token and is effective for deterministic tasks but not for creative ones.
 
-Text Decoding
+-  Sampling-based methods introduce controlled randomness to enhance diversity in responses.
 
+-  Top P sampling, for instance, selects the next token from a minimal set whose probabilities sum to P.
 
-- 00:00:54  A decoding algorithm selects a token from a probability distribution, appends it to the sequence, and repeats the process to create a full response.
+## Prompt Engineering
 
-- 00:01:05  Greedy decoding, the simplest approach, always chooses the most likely next token and is effective for deterministic tasks but not for creative ones.
+-   Prompt engineering is the practice of shaping instructions and context to steer a model's behavior without changing its weights.
 
-- 00:01:18  Sampling-based methods introduce controlled randomness to enhance diversity in responses.
+-   A strong prompt clearly states the task, key constraints, and expected output format.
 
-- 00:01:21  Top P sampling, for instance, selects the next token from a minimal set whose probabilities sum to P.
+-   One common technique is few-shot prompting, where you include a handful of examples so the model imitates the desired style and structure.
 
-## 00:01:36 - 00:02:24
+-  Another technique is chain-of-thought prompting, which asks for step-by-step reasoning and can improve performance on problems requiring multi-step logic.
 
-Prompt Engineering
+## Agents
 
+-  An LLM alone can only generate text and cannot perform actions like web browsing or code execution.
 
-- 00:01:38  Prompt engineering is the practice of shaping instructions and context to steer a model's behavior without changing its weights.
+-  Multi-step agents integrate an LLM with tools and memory in a loop, allowing it to plan and execute actions.
 
-- 00:01:46  A strong prompt clearly states the task, key constraints, and expected output format.
+-  The agent repeatedly cycles through planning, tool calls, and result evaluation until it achieves its goal or encounters limitations.
 
-- 00:01:54  One common technique is few-shot prompting, where you include a handful of examples so the model imitates the desired style and structure.
+## RAGs
 
-- 00:02:01  Another technique is chain-of-thought prompting, which asks for step-by-step reasoning and can improve performance on problems requiring multi-step logic.
+- Plain LLMs can provide incorrect or outdated answers because they rely solely on information stored in their weights.
 
-## 00:02:24 - 00:02:56
+-  RAGs combine an LLM with a retrieval system linked to a knowledge store to improve accuracy.
 
-Agents
+- When a question is posed, the retriever first extracts relevant passages from various sources like PDFs or databases.
 
+-   The LLM then uses these retrieved passages to formulate an answer, grounding the response in external evidence rather than just its memory.
 
-- 00:02:25  An LLM alone can only generate text and cannot perform actions like web browsing or code execution.
+## RLHF
 
-- 00:02:32  Multi-step agents integrate an LLM with tools and memory in a loop, allowing it to plan and execute actions.
+-   RLHF is a reinforcement learning approach where the model generates multiple candidate responses, which are then scored by a separate reward model.
 
-- 00:02:43  The agent repeatedly cycles through planning, tool calls, and result evaluation until it achieves its goal or encounters limitations.
+-  The training algorithm updates the model's weights so that higher-scoring responses become more likely over time, pushing the model towards helpful, clear, and safe outputs.
 
-## 00:02:56 - 00:03:30
+-   RLHF aligns an LLM with human preferences because the reward model learns directly from human feedback, typically from annotators picking preferred responses to the same prompt.
 
-RAGs
+-  The reward model acts as a proxy for human preferences, and reinforcement learning uses this signal to steer the LLM towards responses that score higher on that proxy.
 
+## VAE
 
-- 00:02:57  Plain LLMs can provide incorrect or outdated answers because they rely solely on information stored in their weights.
+-   A VAE is a generative modeling approach that learns a probability distribution of data, consisting of an encoder and a decoder.
 
-- 00:03:05  RAGs combine an LLM with a retrieval system linked to a knowledge store to improve accuracy.
+-  The encoder maps input into a low-dimensional latent representation, which the decoder then maps back to the original input space.
 
-- 00:03:08  When a question is posed, the retriever first extracts relevant passages from various sources like PDFs or databases.
+-  Training optimizes a reconstruction objective to ensure the decoded output remains close to the original input.
 
-- 00:03:21  The LLM then uses these retrieved passages to formulate an answer, grounding the response in external evidence rather than just its memory.
+-  After training, new data can be generated by sampling a point from the latent space and decoding it, often used as a latent compressor in modern text-to-image and text-to-video systems.
 
-## 00:03:30 - 00:04:38
+## Diffusion
 
-RLHF
+-   Diffusion models generate data by learning to reverse a gradual noising process.
 
+-  During training, real samples like images have noise added over many time steps, and a model is trained to predict this noise given the noisy input, time step, and optional conditioning like text.
 
-- 00:03:30  RLHF is a reinforcement learning approach where the model generates multiple candidate responses, which are then scored by a separate reward model.
-
-- 00:03:47  The training algorithm updates the model's weights so that higher-scoring responses become more likely over time, pushing the model towards helpful, clear, and safe outputs.
-
-- 00:04:07  RLHF aligns an LLM with human preferences because the reward model learns directly from human feedback, typically from annotators picking preferred responses to the same prompt.
-
-- 00:04:28  The reward model acts as a proxy for human preferences, and reinforcement learning uses this signal to steer the LLM towards responses that score higher on that proxy.
-
-## 00:04:38 - 00:05:28
-
-VAE
-
-
-- 00:04:42  A VAE is a generative modeling approach that learns a probability distribution of data, consisting of an encoder and a decoder.
-
-- 00:04:49  The encoder maps input into a low-dimensional latent representation, which the decoder then maps back to the original input space.
-
-- 00:05:01  Training optimizes a reconstruction objective to ensure the decoded output remains close to the original input.
-
-- 00:05:09  After training, new data can be generated by sampling a point from the latent space and decoding it, often used as a latent compressor in modern text-to-image and text-to-video systems.
-
-## 00:05:28 - 00:06:36
-
-Diffusion
-
-
-- 00:05:28  Diffusion models generate data by learning to reverse a gradual noising process.
-
-- 00:05:33  During training, real samples like images have noise added over many time steps, and a model is trained to predict this noise given the noisy input, time step, and optional conditioning like text.
-
-- 00:05:48  At inference time, the process starts from pure noise, and the learned denoising step is repeatedly applied to move towards a clean sample.
-
-
+-   At inference time, the process starts from pure noise, and the learned denoising step is repeatedly applied to move towards a clean sample.
