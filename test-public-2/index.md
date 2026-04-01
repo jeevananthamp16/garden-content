@@ -11,7 +11,3 @@ attachments: [{"name":"1775015013777.pdf","path":"/assets/files/1775035606939.pd
 Welcome to Test Public 2!
 
 ![pasted-1775035588367.png](/assets/images/pasted-1775035588367.png)
-
-
-
-[📄 1775015013777.pdf](/assets/files/1775035606939.pdf)
